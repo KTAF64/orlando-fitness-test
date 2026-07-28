@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orlando Personal Trainer | Khadeed Fearon</title>
+<meta name="description" content="Orlando personal trainer Khadeed Fearon helps beginners and repeat dieters build workout habits that actually stick. No crash diets, no gym intimidation.">
+<style>
+  :root {
+    --ink: #1c1c1a;
+    --paper: #faf7f2;
+    --panel: #efe9de;
+    --accent: #2f5d4f;
+    --accent-light: #d7e4dd;
+    --max-width: 1100px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  header.site-header {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--panel);
+  }
+
+  header.site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+  }
+
+  header.site-header nav a {
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 0.95rem;
+    margin-left: 1.5rem;
+  }
+
+  header.site-header nav a:hover {
+    color: var(--accent);
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .split {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .split .media {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .split .media img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .split .content {
+    width: 100%;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+  }
+
+  .hero p.lede {
+    font-size: 1.1rem;
+    max-width: 42ch;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.85rem 1.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .btn:hover {
+    background: #244a3f;
+  }
+
+  .panel {
+    background: var(--panel);
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .principle h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  .principle p {
+    margin: 0;
+  }
+
+  .audience-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .audience-list li {
+    background: #fff;
+    border: 1px solid var(--panel);
+    border-radius: 6px;
+    padding: 1.25rem;
+  }
+
+  .audience-list h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+  }
+
+  .audience-list p {
+    margin: 0;
+    font-size: 0.97rem;
+  }
+
+  .cta-section .content {
+    text-align: left;
+  }
+
+  .faq dt {
+    font-weight: 700;
+    margin-top: 1.25rem;
+  }
+
+  .faq dd {
+    margin: 0.25rem 0 0;
+  }
+
+  footer.site-footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--panel);
+    font-size: 0.9rem;
+    color: #55534c;
+  }
+
+  @media (min-width: 700px) {
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    .split {
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .split.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .split .media {
+      max-width: 380px;
+      flex: 0 0 auto;
+    }
+
+    .split .content {
+      flex: 1 1 auto;
+    }
+
+    .principles {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .audience-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <span class="logo">Khadeed Fearon Fitness</span>
+    <nav>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap split">
+      <div class="content">
+        <p class="eyebrow">Orlando, FL</p>
+        <h1>Orlando Personal Trainer for Beginners and Sustainable Weight Loss</h1>
+        <p class="lede">
+          If a past program left you sore, discouraged, or right back where you started,
+          you don't need more willpower. You need a plan built around your actual life
+          &mdash; one that holds up after the first two weeks, not just during them.
+        </p>
+        <a class="btn" href="#contact">Book a Free Consultation</a>
+      </div>
+      <div class="media">
+        <img src="assets/khadeed-bicep-flex.jpg" alt="Khadeed Fearon, Orlando personal trainer, flexing his bicep in workout gear">
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="wrap split reverse">
+      <div class="content">
+        <p class="eyebrow">About Me</p>
+        <h2>I'm Khadeed Fearon.</h2>
+        <p>
+          I'm 34, and I train people here in Orlando. I moved here from Jamaica in 2019,
+          and one of the first things I noticed was how much the heat and humidity change
+          what a realistic workout routine actually looks like &mdash; something a lot of
+          generic fitness advice never accounts for.
+        </p>
+        <p>
+          Before I ever wrote a program for someone else, I spent years figuring out what
+          actually keeps a person training long-term versus what just sounds good for a
+          few weeks. That's the part I care about most: not the workout that impresses
+          you on day one, but the one you're still doing in month six.
+        </p>
+      </div>
+      <div class="media">
+        <img src="assets/khadeed-pullup-back.jpg" alt="Khadeed Fearon performing a pull-up, demonstrating strength training form">
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap">
+      <p class="eyebrow">My Approach</p>
+      <h2>How I coach</h2>
+      <div class="principles">
+        <div class="principle">
+          <h3>I start smaller than people expect</h3>
+          <p>
+            Most people who've struggled before tried to overhaul everything at once.
+            I'd rather build one or two habits you'll actually keep, then add from there.
+          </p>
+        </div>
+        <div class="principle">
+          <h3>I coach the routine, not just the workout</h3>
+          <p>
+            What you do at the gym matters less than whether the plan fits around your
+            job, your commute, and your energy on a rough week. We build for real life.
+          </p>
+        </div>
+        <div class="principle">
+          <h3>I plan around Orlando, not a generic climate</h3>
+          <p>
+            Nine months of heat and humidity here changes how you should train outdoors,
+            how you recover, and how you pace a session. I factor that in from the start.
+          </p>
+        </div>
+        <div class="principle">
+          <h3>Progress is measured in habits, not just the scale</h3>
+          <p>
+            Weight fluctuates for reasons that have nothing to do with effort. I care more
+            about whether you showed up, recovered well, and can do this again next week.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="wrap">
+      <p class="eyebrow">Who I Work With</p>
+      <h2>This is for you if...</h2>
+      <ul class="audience-list">
+        <li>
+          <h3>You've never really felt comfortable in a gym</h3>
+          <p>
+            You don't know what half the machines are for, you're not sure where to start,
+            and you'd rather not guess in front of an audience. We start wherever you're at,
+            and I explain everything as we go.
+          </p>
+        </li>
+        <li>
+          <h3>You've tried weight loss before and it didn't stick</h3>
+          <p>
+            Maybe you lost weight and gained it back. Maybe the plan was fine but
+            impossible to keep up. Either way, the goal here isn't a fast result &mdash;
+            it's one that holds up a year from now.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-section" id="contact">
+    <div class="wrap split">
+      <div class="content">
+        <p class="eyebrow">Get Started</p>
+        <h2>Let's talk about where you're starting from</h2>
+        <p>
+          A consultation is just a conversation &mdash; about your schedule, what hasn't
+          worked before, and what a realistic routine could look like for you. No pressure,
+          no sales script.
+        </p>
+        <a class="btn" href="mailto:khadeed@example.com">Book a Free Consultation</a>
+      </div>
+      <div class="media">
+        <img src="assets/khadeed-side-profile.jpg" alt="Side profile portrait of Orlando personal trainer Khadeed Fearon">
+      </div>
+    </div>
+  </section>
+
+  <section class="faq panel">
+    <div class="wrap">
+      <h2>Common Questions</h2>
+      <dl>
+        <dt>Do I need to already be in shape to start?</dt>
+        <dd>No. Most people I work with are starting from the beginning, and the first
+          sessions are about learning the basics safely, not testing your limits.</dd>
+
+        <dt>What if I've failed at this before?</dt>
+        <dd>That's the norm, not the exception. We'll look at what made past attempts hard
+          to sustain and build around that, instead of repeating the same approach.</dd>
+
+        <dt>Do you train outdoors given the Orlando weather?</dt>
+        <dd>Sometimes, depending on the season and time of day. Florida heat and humidity
+          are part of the planning, not an afterthought.</dd>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Khadeed Fearon Fitness &middot; Orlando, FL</p>
+  </div>
+</footer>
+
+</body>
+</html>
