@@ -91,11 +91,19 @@
     letter-spacing: 0.02em;
   }
 
+  header.site-header nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
   header.site-header nav a {
+    display: inline-block;
     text-decoration: none;
     color: var(--ink);
     font-size: 0.95rem;
-    margin-left: 1.5rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 4px;
   }
 
   header.site-header nav a:hover {
